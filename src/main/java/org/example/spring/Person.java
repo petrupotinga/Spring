@@ -3,8 +3,12 @@ package org.example.spring;
 public class Person {
     private Pet pet;
 
-    public Person(Pet pet) {
+    public Person() {
         System.out.println("Person bean is createtd");
+    }
+
+    public void setPet(Pet pet) {
+        System.out.println("Class Person: set Pet");
         this.pet = pet;
     }
 
