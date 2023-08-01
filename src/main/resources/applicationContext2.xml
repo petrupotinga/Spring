@@ -9,6 +9,8 @@
 
     <bean id="myPet"
           class="org.example.spring.Dog"
+          init-method="init"
+          destroy-method="destroy"
           scope="prototype">
     </bean>
 </beans>
