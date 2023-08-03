@@ -1,5 +1,6 @@
 package org.example.spring;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,13 +17,13 @@ public class Dog implements Pet {
         System.out.println("Dog bean is created");
     }
 
-    public void init() {
-        System.out.println("Class Dog: init method");
-    }
-
-    public void destroy() {
-        System.out.println("Class Dog: destroy method");
-    }
+//    public void init() {
+//        System.out.println("Class Dog: init method");
+//    }
+//
+//    public void destroy() {
+//        System.out.println("Class Dog: destroy method");
+//    }
 
     @Override
     public void say() {
