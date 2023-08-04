@@ -3,7 +3,7 @@ package org.example.spring;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Dog implements Pet {
 //    private String name;
 //    public String getName() {
