@@ -31,13 +31,9 @@ public class Test1 {
 //            System.out.println("Done!");
 
             Session session = factory.getCurrentSession();
-
             session.beginTransaction();
-
-            Employee employee = session.get(Employee.class,1);
-
+            Employee employee = session.get(Employee.class, 3);
             System.out.println(employee.getEmpDetails());
-
             session.getTransaction().commit();
             System.out.println("Done!");
         } finally {
