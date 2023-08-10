@@ -19,6 +19,8 @@ public class Employee {
     private int salary;
 
 
+
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "details_id")
     private Details empDetails;
