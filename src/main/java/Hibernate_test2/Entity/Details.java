@@ -15,6 +15,9 @@ public class Details {
     private String phoneNumber;
     @Column(name = "email")
     private String email;
+    @OneToOne(mappedBy = "empDetails",
+            cascade = CascadeType.ALL)
+    private Employee employee;
 
     public Details() {
     }
@@ -23,6 +26,14 @@ public class Details {
         this.city = city;
         this.phoneNumber = phoneNumber;
         this.email = email;
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 
     public int getId() {
