@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "deparments")
+@Table(name = "departments")
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,9 +17,8 @@ public class Department {
     private int maxSalary;
     @Column(name = "min_salary")
     private int minSalary;
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "department")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "department")
     private List<Employee> emps;
-
 
 
     public Department() {
@@ -30,8 +29,9 @@ public class Department {
         this.maxSalary = maxSalary;
         this.minSalary = minSalary;
     }
-    public void addEmployeeToDepartment(Employee employee){
-        if(emps == null){
+
+    public void addEmployeeToDepartment(Employee employee) {
+        if (emps == null) {
             emps = new ArrayList<>();
         }
         emps.add(employee);
