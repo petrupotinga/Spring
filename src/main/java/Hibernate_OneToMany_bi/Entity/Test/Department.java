@@ -1,4 +1,4 @@
-package Hibernate_OneToMany_bi.Entity;
+package Hibernate_OneToMany_bi.Entity.Test;
 
 import javax.persistence.*;
 import java.util.ArrayList;
