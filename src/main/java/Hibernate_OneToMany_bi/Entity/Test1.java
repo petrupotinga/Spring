@@ -1,6 +1,8 @@
 package Hibernate_OneToMany_bi.Entity;
 
 
+import Hibernate_OneToMany_bi.Entity.Test.Department;
+import Hibernate_OneToMany_bi.Entity.Test.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
