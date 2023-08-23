@@ -16,18 +16,24 @@ public class Test1 {
 
         Session session = null;
         try {
-//            session = factory.getCurrentSession();
-//            Section section1 = new Section("Dance");
-//            Child child1 = new Child("Olya", 12);
-//            Child child2 = new Child("Grisa", 8);
-//            Child child3 = new Child("Pavlic", 9);
-//            section1.addChildToSection(child1);
-//            section1.addChildToSection(child2);
-//            section1.addChildToSection(child3);
-//            session.beginTransaction();
-//            session.persist(section1);
-//            session.getTransaction().commit();
-//            System.out.println("Cu succes!");
+            session = factory.getCurrentSession();
+            Section section1 = new Section("Dance");
+            Child child1 = new Child("Olya", 12);
+            Child child2 = new Child("Grisa", 8);
+            Child child3 = new Child("Pavlic", 9);
+
+            session.beginTransaction();
+
+            section1.addChildToSection(child1);
+            section1.addChildToSection(child2);
+            section1.addChildToSection(child3);
+
+            session.save(child1);
+            session.save(child2);
+            session.save(child3);
+            
+            session.getTransaction().commit();
+            System.out.println("Cu succes!");
 //  *****************************************************
 
 //            session = factory.getCurrentSession();
@@ -56,12 +62,12 @@ public class Test1 {
 //            System.out.println("Done!");
 //            ******************************************************
 
-            session = factory.getCurrentSession();
-            session.beginTransaction();
-            Child child = session.get(Child.class, 5);
-            session.delete(child);
-            session.getTransaction().commit();
-            System.out.println("Done!");
+//            session = factory.getCurrentSession();
+//            session.beginTransaction();
+//            Child child = session.get(Child.class, 5);
+//            session.delete(child);
+//            session.getTransaction().commit();
+//            System.out.println("Done!");
 
         } finally {
             session.close();
