@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5fe1b5b6-f3c7-4129-8fb9-9fcd10f634db" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hibernate_ManyToMany/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hibernate_ManyToMany/Test1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
